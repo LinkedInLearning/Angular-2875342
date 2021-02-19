@@ -1,0 +1,11 @@
+<div class="input-group">
+  <input type="text" class="form-control" placeholder="Find Users by Name" #filter (keyup)="update(filter.value)">
+
+  <span class="input-group-btn">
+    <button class="btn btn-default" type="button" (click)="update(''); filter.value = ''">Clear</button>
+  </span>
+</div>
+
+<ul class="user-list">
+  <li *ngFor="let user of users" class="user-list-item">{{ user.name }}</li>
+</ul>
