@@ -16,7 +16,7 @@ import { ErrorMetadataService } from './services/error-metadata.service';
     AppRoutingModule
   ],
   providers: [
-    { provide: ErrorHandler, useClass: ErrorMetadataService }
+    // { provide: ErrorHandler, useClass: ErrorMetadataService }
   ],
   bootstrap: [AppComponent]
 })

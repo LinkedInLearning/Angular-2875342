@@ -11,7 +11,7 @@ export class UserListComponent implements OnInit {
   public users: User[] | null = null;
 
   constructor(
-    // private userListService: UserListService
+    private userListService: UserListService
   ) { }
 
   public async ngOnInit(): Promise<void> {
