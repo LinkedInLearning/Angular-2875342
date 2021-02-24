@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { User } from '../user/user';
 import { UserListService } from './user-list.service';
 
+import { WebStorageService } from '../services/web-storage.service';
+
 @Component({
   selector: 'app-user-list',
   templateUrl: './user-list.component.html',
