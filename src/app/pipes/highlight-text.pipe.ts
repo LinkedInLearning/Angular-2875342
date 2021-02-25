@@ -12,7 +12,9 @@ export class HighlightTextPipe implements PipeTransform {
 
     const search = new RegExp(filter, 'ig');
 
-    return value.replace(search, 'x');
+    return value.replace(search, (match) => {
+      return `<span class="highlight-text">${match}</span>`;
+    });
   }
 
 } 
