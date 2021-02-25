@@ -9,3 +9,13 @@
 <ul class="user-list">
   <li *ngFor="let user of users" class="user-list-item" [innerHtml]="user.name | highlightText : filter.value"></li>
 </ul>
+
+<!-- 
+
+  CHALLENGE
+
+  Make a new pipe that filters the array of users by locationId,
+  returning a new array of users that match one or more location IDs
+  passed into the pipe.
+
+-->
