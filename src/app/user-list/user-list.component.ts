@@ -20,6 +20,8 @@ export class UserListComponent implements OnInit {
   public async ngOnInit(): Promise<void> {
     this.webStorageService.getRemote().subscribe(filtered => {
       this.users = (filtered === null) ? this.userListService.getAll() : this.userListService.filter(filtered);
+    }, error => {
+      console.error('ngOnInit Error', error);
     });
   }
 
