@@ -11,7 +11,7 @@ describe('UserListComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ UserListComponent ],
       providers: [
-        { provide: WebStorageService, useValue: jasmine.createSpyObj('WebStorageService', [ 'getRemove', 'setRemote' ]) }
+        { provide: WebStorageService, useValue: jasmine.createSpyObj('WebStorageService', [ 'getRemote', 'setRemote' ]) }
       ]
     })
     .compileComponents();
