@@ -1,16 +1,16 @@
-import { TestBed } from '@angular/core/testing';
-
 import { UserListService } from './user-list.service';
 
-describe('UserListService', () => {
+describe('User List Service', () => {
   let service: UserListService;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(UserListService);
+    service = new UserListService();
   });
 
-  it('should be created', () => {
-    expect(service).toBeTruthy();
+  it('should return a User List with 16 users', (done: DoneFn) => {
+    service.getAll().then((response) => {
+      expect(response.length).toBe(16);
+      done();
+    });
   });
 });
