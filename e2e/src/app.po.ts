@@ -1,11 +1,18 @@
-import { browser, by, element } from 'protractor';
+import { browser, element, by, ElementArrayFinder } from 'protractor';
 
 export class AppPage {
-  async navigateTo(): Promise<unknown> {
-    return browser.get(browser.baseUrl);
+
+  public async getDashboard(): Promise<any> {
+    return browser.get('/dashboard');
   }
 
-  async getTitleText(): Promise<string> {
-    return element(by.css('app-root .content span')).getText();
+  public async getHeaderText(): Promise<string> {
+    const header = by.css('h2');
+    return element(header).getText();
+  }
+
+  public getListItems(): ElementArrayFinder {
+    const items = by.css('li');
+    return element.all(items);
   }
 }
