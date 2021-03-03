@@ -13,10 +13,10 @@ Some branches will have a beginning and an end state. These are marked with the 
 
 ## Installing
 1. To use these exercise files, you must have the following installed:
-	- [Node and npm](https://nodejs.org/)
-  - [Visual Studio Code](https://code.visualstudio.com/) (optional - use any editor you like)
-  - [Google Chrome](https://www.google.com/chrome/) (optional - use any browser you like)
-  - Mac, Windows, Linux
+    - [Node and npm](https://nodejs.org/)
+    - [Visual Studio Code](https://code.visualstudio.com/) (optional - use any editor you like)
+    - [Google Chrome](https://www.google.com/chrome/) (optional - use any browser you like)
+    - Mac, Windows, Linux
 2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like [SourceTree](https://www.sourcetreeapp.com/).
 3. Run `npm install` from the `main` branch to install project dependencies.
 
