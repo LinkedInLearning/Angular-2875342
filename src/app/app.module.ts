@@ -10,20 +10,20 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { UserListInterceptorService } from './mocks/user-list-interceptor.service';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    UserListComponent,
-    HighlightTextPipe
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
-  ],
-  providers: [
+    declarations: [
+        AppComponent,
+        UserListComponent,
+        HighlightTextPipe
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule
+    ],
+    providers: [
     // { provide: ErrorHandler, useClass: ErrorMetadataService },
-    { provide: HTTP_INTERCEPTORS, useClass: UserListInterceptorService, multi: true }
-  ],
-  bootstrap: [AppComponent]
+        { provide: HTTP_INTERCEPTORS, useClass: UserListInterceptorService, multi: true }
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
